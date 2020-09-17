@@ -1,0 +1,89 @@
+
+body
+{
+    background-color: #f8f880;
+}
+
+nav
+{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.navbar-brand
+{
+    margin-top: 5px;
+}
+
+img
+{
+    width: 100%;
+    height: 1000px;
+}
+
+main
+{
+    width: 80%;
+    height: 100%;
+    margin: 1.5em auto;
+    color: black;
+}
+
+article
+{
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
+p
+{
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2em;
+}
+
+h3
+{
+    font-family: 'Special Elite', cursive;
+}
+
+h2
+{
+    font-family: 'Special Elite', cursive;
+}
+
+h4
+{
+    margin: 1em auto;
+}
+
+#panel
+{
+    background-color: white;
+    border-radius: 50px;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.middle
+{
+    margin-top: 2em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.limit
+{
+    border: 1px solid black;
+    margin: 0 1.5em;
+}
+
+.fact
+{
+    margin: 1.2em auto;
+}
+
+.btn
+{
+    margin-bottom: 1.2em;
+}

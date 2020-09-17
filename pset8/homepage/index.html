@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <title>Jacob's Sorting Webpage</title>
+    </head>
+    <body>
+      <div class"container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+          <a class="navbar-brand" href="index.html" style="color: white;"><h3>Sorting Algorithms</h3></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="row justify-content-end collapse navbar-collapse" id="navbarNavDropdown" style="margin-right: 16px; font-size: 20px;">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  Pick a Sort!
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="bubble.html">Bubble Sort</a>
+                  <a class="dropdown-item" href="merge.html">Merge Sort</a>
+                  <a class="dropdown-item" href="insertion.html">Insertion Sort</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <header>
+          <img src="images/sorting.jpg">
+        </header>
+        <main>
+          <article class="intro">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-5">
+                  <h2>Welcome to Sorting Algorightms!</h2>
+                </div>
+                <div class="col-5">
+                  <p>In computer science, there are many sorting algorithms that allow us to order arrays and lists according to a specified condition! Sorting algorithms offer different time complexities, thus it is important to choose one that is suitable for your needs. Often in computer science, there is a trade-off between time and space, where algorithms that are more time effecient require more space in memory and vice-versa!<p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <section class="types">
+           <div class="container">
+             <div class="row justify-content-center">
+               <h3>Types of Sorting Algorithms</h3>
+             </div>
+             <div class="row justify-content-center">
+               <div class="col" id="panel" onclick="location.href='bubble.html';" style="cursor: pointer;">
+                <h4>Bubble Sort</h4>
+                <div class="limit"></div>
+                <ul class="facts">
+                  <li class="fact">
+                    Simple sorting algorithm
+                  </li>
+                  <li class="fact">
+                    Compare adjacent elements
+                  </li>
+                  <li class="fact">
+                    Swap elements if out of order
+                  </li>
+                  <li class="fact">
+                    Repeat until list is ordered
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-info">Learn More!</button>
+               </div>
+               <div class="col middle" id="panel" onclick="location.href='merge.html';" style="cursor: pointer;">
+                 <h4>Merge Sort</h4>
+                 <div class="limit"></div>
+                <ul class="facts">
+                  <li class="fact">
+                    Seperates list in two halves
+                  </li>
+                  <li class="fact">
+                    Orders left then right half
+                  </li>
+                  <li class="fact">
+                    Repeats until half is of size 1
+                  </li>
+                  <li class="fact">
+                    Merges ordered halves
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-info">Learn More!</button>
+               </div>
+               <div class="col" id="panel" onclick="location.href='insertion.html';" style="cursor: pointer;">
+                 <h4>Insertion Sort</h4>
+                 <div class="limit"></div>
+                <ul class="facts">
+                  <li class="fact">
+                    Loop over list starting at index 1
+                  </li>
+                  <li class="fact">
+                    Compare element by looping again
+                  </li>
+                  <li class="fact">
+                    Insert element at ordered position
+                  </li>
+                  <li class="fact">
+                    Repeat until list is ordered
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-info">Learn More!</button>
+               </div>
+             </div>
+           </div>
+          </section>
+        </main>
+      </div>
+      <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script type="text/javascript">const element = document.querySelectorAll("#panel");
+        VanillaTilt.init(element);
+        element.addEventListener("tiltChange", callback);
+        </script>
+    </body>
+</html>

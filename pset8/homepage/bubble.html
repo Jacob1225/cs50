@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bubble.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <title>Jacob's Sorting Webpage</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="index.html" style="color: white;"><h3>Sorting Algorithms</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row justify-content-end collapse navbar-collapse" id="navbarNavDropdown" style="margin-right: 16px; font-size: 20px;">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                Pick a Sort!
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="bubble.html">Bubble Sort</a>
+                <a class="dropdown-item" href="merge.html">Merge Sort</a>
+                <a class="dropdown-item" href="insertion.html">Insertion Sort</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <img class="header" src="images/bubbles.jpg">
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container1">
+            <div class="box data-tilt" id="panel">
+              <div class="imgBx">
+                <img class="image" src="images/laptop.jpg">
+              </div>
+              <div class="contentBx">
+                <h3>Bubble Sorting</h3>
+                <p>Bubble sorting works by looping through a list or an array and swapping elements that are out of order. If the ith element is greater than the i + 1 element the algorithm requires a swap. This process is repeated until the list is ordered.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="steps">
+          <div class="title">
+            <h2>Bubble Sorting Steps</h2>
+          </div>
+          <div class="pans">
+            <div class="container1">
+              <div class="box data-tilt" id="panel">
+                <div class="imgBx">
+                  <img class="image" src="images/1.jpeg">
+                </div>
+                <div class="contentBx">
+                  <h3>Step 1 :</h3>
+                  <p>Start by looping over every element of the list or array. Bubble sort requires two loops, thus the first step establishes the outer loop. The outer loop will keep track of say an integer i.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container1">
+              <div class="box data-tilt" id="panel">
+                <div class="imgBx">
+                  <img class="image" src="images/pix.jpg">
+                </div>
+                <div class="contentBx">
+                  <h3>Step 2 :</h3>
+                  <p>Once the outer loop has been created, the second loop that will allow the comparison of each element is created. The inner loop will keep track of say an integer j.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pans">
+            <div class="container1">
+              <div class="box data-tilt" id="panel">
+                <div class="imgBx">
+                  <img class="image" src="images/pixel.jpg">
+                </div>
+                <div class="contentBx">
+                  <h3>Step 3 :</h3>
+                  <p>For each iteration of the inner loop, compare the jth element with the j + 1 element. If the jth element is greater, swap both values in the list</p>
+                </div>
+              </div>
+            </div>
+            <div class="container1">
+              <div class="box data-tilt" id="panel">
+                <div class="imgBx">
+                  <img class="image" src="images/pixels.jpg">
+                </div>
+                <div class="contentBx">
+                  <h3>Step 4 :</h3>
+                  <p>Repeat step 3 until the list is fully ordered. Thus, in the worst case scenario, where the list is in reverse order, this process has an exponential time complexity. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="examples">
+            <div class="example">
+              <h2>Bubble Sorting in Python</h2>
+            </div>
+            <div>
+              <img src="images/bubble_sort.png">
+            </div>
+        </section>
+      </main>
+      <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script type="text/javascript">const element = document.querySelectorAll("#panel");
+        VanillaTilt.init(element);
+        element.addEventListener("tiltChange", callback);
+        </script>
+    </body>
+</html>
